@@ -99,8 +99,7 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-=======
->>>>>>> parent of cf5472e... config
+
   
   
   

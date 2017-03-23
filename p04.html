@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Detall</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=yes" /><!--||||||||||-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href="css/estils.css" rel="stylesheet" type="text/css">
+
+<!--FULLSCREEN // NOMÉS necessari x TEST en el browser NO a l'app !!!! 
+<script type="text/javascript" src="js/fullscreen.js"></script>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">-->
+
+<!-- Llibreria basada en JQuery amb events tàctils -->
+<script type="text/javascript" src="maps/zepto.min.js"></script>
+
+<!--ANAR A HOME-->
+<script>function goHome(){window.history.go(-(history.length-1));};</script>
+
+<!-- MAPES -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="maps/gmaps.js"></script>
+<script type="text/javascript" src="js/w_map.js"></script>
+
+<!--  CRIDEM TOTES LES FUNCIONS  -->
+<script>//pàgina es recarregarà encara que fem back o forward en el navegador
+//window.onpageshow =	fullScreen;
+//window.onload =	function inici(){};</script>
+</head>
+
+<body>
+
+        <div id="head"><a class="home" onclick="goHome()">H</a><a href="javascript:history.go(-1)" style="font-size:20px" class="back"></a></div>
+        
+        <div id="cont">
+			<a class="bot" id="punt">PUNT</a><a class="bot" id="centre">POSICIÓ</a><a class="bot" id="veure">RUTA</a>
+        </div>
+        <div id="map">
+        	<!-- aquí es carregarà el MAPA -->
+        	<span style="display:block;margin-top:30%;text-align:center;">Esperant el mapa...</span>
+        </div>
+        
+
+</body>
+</html>

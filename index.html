@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>Categoria</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=yes" /><!--||||||||||-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href="css/estils.css" rel="stylesheet" type="text/css">
+
+<!--FULLSCREEN // NOMÉS necessari x TEST en el browser NO a l'app !!!! 
+<script type="text/javascript" src="js/fullscreen.js"></script>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">-->
+
+<!-- Llibreria basada en JQuery amb events tàctils -->
+<script type="text/javascript" src="maps/zepto.min.js"></script>
+
+<!--SCROLL-->
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+
+<!--<script type="text/javascript" charset="utf-8" src="phonegap.js"></script> -->
+<!-- ///////////           ?           </script>///////////-->
+<script type="text/javascript" charset="utf-8">
+			
+			// necessari per carregar cordova
+			function onLoad()
+            {
+               document.addEventListener("deviceready", onDeviceReady, true);
+            }
+			// funció sortir
+            function exitFromApp()
+            {
+                if (navigator.app) {
+					alert("navigator.app");
+                   navigator.app.exitApp();
+                }
+                else if (navigator.device) {
+                    navigator.device.exitApp();
+                }
+            }
+
+
+
+<!--  CRIDEM TOTES LES FUNCIONS  -->
+<script>//pàgina es recarregarà encara que fem back o forward en el navegador
+//window.onpageshow = fullScreen ;
+window.onload =	function inici(){loadScroll();};</script>
+</head>
+
+<body>  
+    <div id="pagina">
+
+        <div id="head"><h1>Inici</h1></div>
+
+        <div id="cont"><br><br><p>Entorn de proves per a la producció d'app per a dispositius mòbils. Maig de 2015. Escola Pau Gargallo. Badalona. Catalunya. Europa. El món.</p>
+
+            <div id="scroller">
+                <ul>
+                    <li><a href="p01.html">LLista categories</a></li>
+                    <li><a onclick="exitFromApp()">SORTIR</a></li>
+                </ul>
+               
+            <div id="scroller">
+        </div>
+        
+ 	</div>
+
+</body>
+</html>

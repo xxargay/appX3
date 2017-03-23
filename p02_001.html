@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>Categoria</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=yes" /><!--||||||||||-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href="css/estils.css" rel="stylesheet" type="text/css">
+
+<!--FULLSCREEN // NOMÉS necessari x TEST en el browser NO a l'app !!!! 
+<script type="text/javascript" src="js/fullscreen.js"></script>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">-->
+
+<!-- Llibreria basada en JQuery amb events tàctils -->
+<script type="text/javascript" src="maps/zepto.min.js"></script>
+
+<!--SCROLL-->
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+
+<!--ANAR A HOME-->
+<script>function goHome(){window.history.go(-(history.length-1));};</script>
+
+<!--LLISTA ELEMENTS DE LA CATEGORIA-->
+<script type="text/javascript" src="js/llist_ele.js"></script>
+<script type="text/javascript" src="js/w_ele.js"></script>
+
+<!--  CRIDEM TOTES LES FUNCIONS  -->
+<script>//pàgina es recarregarà encara que fem back o forward en el navegador
+//window.onpageshow =	fullScreen;
+window.onload =	function inici(){llistaElem();loadScroll();};</script>
+</head>
+
+<body> 
+    <div id="pagina">
+
+        <div id="head"><a class="home" onclick="goHome()">H</a><a href="javascript:history.go(-1)" style="font-size:20px" class="back"></a></div>
+
+        <div id="cont">
+            <div id="scroller">
+                <ul id="llista"></ul>
+            </div>
+        </div>
+
+	</div>
+</body>
+</html>

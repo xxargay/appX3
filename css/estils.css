@@ -1,0 +1,55 @@
+* {font-family:monospace;box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;outline:none}
+
+/*   DESACTIVA LA SELECCIÓ DE TEXT PER PART DE L'USUARI   *//* ULL: és NECESSARI per iScroll */
+* {-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none;-ms-user-select: none; user-select: none;}
+
+/*   DESACTIVA EL FEEDBACK DEL NAVEGADOR EN FER TAP   *//* ULL: és NECESSARI per iScroll */
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);-moz-tap-highlight-color: rgba(0,0,0,0);tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;-moz-touch-callout: none;touch-callout: none;}
+	
+/*   DESACTIVA EL CANVI DE TAMANY DEL TEXT EN CANVIAR L'ORIENTACIÓ de la pantalla */
+*{-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none;-o-text-size-adjust: none;text-size-adjust: none;}
+
+/* ELEMENT iScroll */
+#scroller {position: absolute;width: 100%;
+/* Put the scroller into the HW Compositing layer right from the start */
+-webkit-transform: translateZ(0);-moz-transform: translateZ(0);-ms-transform: translateZ(0);-o-transform: translateZ(0);transform: translateZ(0);}
+/*  ELEMENT NECESSARI PER FER FULLSCREEN*/
+#pagina {position: absolute;width:100%;height:100%;}
+
+body {/*margin:3%;*/ /*overflow:hidden;*/}
+
+/* NECESSITEM height per iScroll */
+#cont{z-index:50;position:relative;top:50pt;width:94%;height:85%;margin:auto;
+/*  FEM VISIBLE l'overflow  per no dependre de l'alçada*//*overflow: hidden;*/}
+
+#head {position:fixed;z-index:100;top:0;left:0;height:50pt;width:100%;padding-left:3%;background-color:#ffc;border:0pt solid red;}
+
+#map{display:block;margin:0;padding:0;position:absolute;z-index:-1;top:80pt;left:0;right:0;bottom:0;background:#C4E2F5;}
+
+/*  CENTRAR EL TEXT VERTICALMENT */
+h1 {line-height:50pt;}
+
+h4 {letter-spacing:4pt;font-size:14pt;color:#6694B0;font-variant:small-caps;font-weight:bold;margin:0;}
+
+a {color:#6694B0;font-size:11pt;line-height:40pt;text-decoration:none;cursor:pointer;padding-left:6pt;padding-right:2pt;}
+
+.bot {display:inline-block;width:33%;height:20pt;line-height:14pt;padding:1pt;padding-left:4pt;background-color:#fff;border: dotted #81BEE3 1pt;font-size:9pt;}
+.home{display:block;float:right;width:33%;height:100%;line-height:32pt;padding:10pt;font-size:9pt;text-align:right;}
+
+ul {margin-top:10pt;margin-bottom:10pt;list-style-type:none;}
+
+li {padding:1.5%;border:dotted #81BEE3 1pt;}
+li a {display:block;color:#6694B0;height:40pt;background-color:#efc;}
+li a:hover, li a:active{color:grey;background-color:#C5E1E3;transition:1s;}
+li img {width:100%;}
+li a img {height:40pt;width:auto;vertical-align:-14pt;padding-left:0;}
+/*  PER ENLLAÇOS ON EL PROTOCOL SIGUI TEL  */
+li a[href^=tel] {height:40pt;color:#6694B0;font-weight:bold;}
+
+button{text-decoration: none;background-color:#fff;font-size: 12pt;padding: 8pt;border: dotted #81BEE3 1pt;}
+
+.back{display:block;width:80pt;height:40pt;background:url(../img/b.png) 9pt center no-repeat;margin-left:-3%;margin-top:5px; }
+
+/* amaga textos de Googl sobre el mapa */
+.gm-style-cc { display:none; }
